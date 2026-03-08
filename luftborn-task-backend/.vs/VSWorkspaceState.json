@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\LuftBornTask.API",
+    "\\src\\LuftBornTask.Application",
+    "\\src\\LuftBornTask.Application\\Services"
+  ],
+  "SelectedNode": "\\src\\LuftBornTask.Application\\Services\\TaskService.cs",
+  "PreviewInSolutionExplorer": false
+}

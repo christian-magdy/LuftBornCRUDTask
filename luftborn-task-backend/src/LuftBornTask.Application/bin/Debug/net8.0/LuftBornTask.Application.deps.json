@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LuftBornTask.Application/1.0.0": {
+        "dependencies": {
+          "LuftBornTask.Domain": "1.0.0"
+        },
+        "runtime": {
+          "LuftBornTask.Application.dll": {}
+        }
+      },
+      "LuftBornTask.Domain/1.0.0": {
+        "runtime": {
+          "LuftBornTask.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LuftBornTask.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LuftBornTask.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

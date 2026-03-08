@@ -1,0 +1,108 @@
+/* Page header */
+
+.page-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.page-title{
+  font-size:26px;
+  font-weight:600;
+}
+
+/* Card container */
+
+.table-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Table */
+
+.task-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.task-table th{
+  text-align:left;
+  padding:14px;
+  font-size:14px;
+  color:#64748b;
+  border-bottom:1px solid #eee;
+}
+
+.task-table td{
+  padding:14px;
+  border-bottom:1px solid #f1f1f1;
+}
+
+.task-table tr:hover{
+  background:#f8fafc;
+}
+
+/* Title */
+
+.task-title{
+  font-weight:500;
+}
+
+/* Status badges */
+
+.status{
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.status-done{
+  background:#dcfce7;
+  color:#16a34a;
+}
+
+.status-pending{
+  background:#fee2e2;
+  color:#dc2626;
+}
+
+/* Buttons */
+
+.btn-create{
+  background:#22c55e;
+  color:white;
+  padding:8px 14px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.btn-edit{
+  background:#3b82f6;
+  border:none;
+  color:white;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-right:6px;
+}
+
+.btn-delete{
+  background:#ef4444;
+  border:none;
+  color:white;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* Actions alignment */
+
+.actions{
+  display:flex;
+  gap:6px;
+}

@@ -1,0 +1,66 @@
+<div class="page-header">
+  <h2 class="page-title">Tasks</h2>
+
+  <a class="btn-create" routerLink="/create-task">
+    + Create Task
+  </a>
+</div>
+
+<div class="table-card">
+
+  <table class="task-table">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th class="actions-col">Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let task of tasks; let i = index">
+
+        <td>{{ i + 1 }}</td>
+
+        <td class="task-title">
+          {{task.title}}
+        </td>
+        <td class="task-title">
+          {{task.description}}
+        </td>
+        <td>
+          <span
+            class="status"
+            [ngClass]="task.isCompleted ? 'status-done' : 'status-pending'"
+          >
+            {{ task.isCompleted ? 'Completed' : 'Pending' }}
+          </span>
+        </td>
+
+        <td class="actions">
+
+          <button class="btn-edit"
+            [routerLink]="['/edit',task.id]">
+            Edit
+          </button>
+
+          <button
+            class="btn-delete"
+            (click)="delete(task.id)"
+          >
+            Delete
+          </button>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
